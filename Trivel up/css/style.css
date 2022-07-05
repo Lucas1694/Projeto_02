@@ -132,33 +132,145 @@ nav li a:hover{
     animation: vibrar 0.5s ease-in-out infinite both;
 }
 
+.sectionslide{
 
-.card .cardimagem{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
 
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    padding: 3px;
-    background: bisque;
 }
 
-.card .cardimagem img{
+.slide-container{
 
+    max-width: 1120px;
     height: 100%;
-    width: 100%;
-    object-fit: cover;    
-    border-radius: 50%;
-    border: 3px solid white;
+    background-color: gray;
+    padding: 40px 0;
+
 }
+
+
+.slide-content{
+
+    margin: 0 40px ;
+
+}
+
 
 .card{
 
+    width: 320px;
+    border-radius: 25px;
+    background-color: white;
+
+}
+
+.img-content, .card-content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+
+}
+
+.img-content{
+
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+    border-radius: 25px 25px 0 25px;
+
+}
+
+.overlay::before, .overlay::after{
+
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: bisque;
+}
+
+.overlay::after{
+
+    border-radius: 0 25px 0 0 ;
+    background-color: white;
+}
+
+.card-img{
+
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
     background: white;
-    border-radius: 20px;
+    padding: 3px;
+}
+
+.card-img .card-img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid bisque;
+}
+
+.nome{
+
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    padding: 3px;
 
 
 }
 
+.descricao{
+
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    padding: 3px;
+
+}
+
+.buttons1{
+
+    border: none;
+    font-size: 16px;
+    color: black;
+    padding: 8px;
+    background: bisque;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.buttons1:hover{
+
+    background: rgb(129, 116, 99);
+
+
+}
 
 @keyframes vibrar {
     
