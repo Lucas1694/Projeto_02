@@ -8,7 +8,7 @@ var swiper = new Swiper(".slide-content", {
     gragCursor: 'true',
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      clickable: false,
       dynamicBullets: true,
 
     },
